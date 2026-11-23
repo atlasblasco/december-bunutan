@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2e1b">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Draw your Monito/Monita for our Christmas bunutan!">
+<title>Christmas Bunutan 🎁</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<main class="wrap">
+  <header class="hero">
+    <div class="star" aria-hidden="true">★</div>
+    <p class="eyebrow">Monito · Monita</p>
+    <h1 id="evName">Christmas Bunutan</h1>
+    <p class="meta" id="evMeta"></p>
+  </header>
+
+  <!-- Step 1: form -->
+  <section class="card" id="formCard" aria-labelledby="formTitle">
+    <h2 id="formTitle">Bumunot ka na! 🎄</h2>
+    <p class="lead">Pick your name, type the code the organizer sent you, then draw.</p>
+
+    <form id="drawForm" novalidate autocomplete="off">
+      <label for="nameInput">Your name</label>
+      <div class="combo" id="combo">
+        <input id="nameInput" type="text" role="combobox" aria-autocomplete="list"
+               aria-expanded="false" aria-controls="nameList" placeholder="Search your name…"
+               autocomplete="off" autocapitalize="words" spellcheck="false">
+        <ul id="nameList" role="listbox" hidden></ul>
+      </div>
+
+      <label for="codeInput">Your secret code</label>
+      <input id="codeInput" type="text" inputmode="text" autocapitalize="characters"
+             autocomplete="off" spellcheck="false" maxlength="12" placeholder="e.g. ABCD-2345">
+
+      <p id="error" class="error" role="alert" aria-live="assertive"></p>
+
+      <button id="drawBtn" type="submit" class="btn-primary">🎁 Draw my name</button>
+    </form>
+    <p class="fine">Your result is private. Only your code can unlock it.</p>
+  </section>
+
+  <!-- Step 2: animation -->
+  <section class="card stage" id="stage" hidden aria-live="polite">
+    <div class="reel" aria-hidden="true"><span id="reelName">…</span></div>
+    <p class="stage-text" id="stageText">Binubunot na…</p>
+    <div class="gift" id="gift" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="lid"><div class="bow"><span></span><span></span></div></div>
+      <div class="box"></div>
+    </div>
+  </section>
+
+  <!-- Step 3: result -->
+  <section class="card result" id="resultCard" hidden tabindex="-1" aria-labelledby="resultTitle">
+    <p class="eyebrow dark" id="resultHello">Hi!</p>
+    <h2 id="resultTitle">Your Monito / Monita is</h2>
+    <div class="reveal" id="revealName">—</div>
+    <ul class="details" id="details"></ul>
+    <p class="fine dark">🤫 Shhh! Keep it a secret until the exchange.</p>
+    <button id="hideBtn" type="button" class="btn-secondary">Hide my result</button>
+  </section>
+
+  <footer class="foot">Merry Christmas! 🎅 Need help? Message the organizer.</footer>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
