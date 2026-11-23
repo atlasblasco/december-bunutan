@@ -2,7 +2,7 @@
 window.BUNUTAN_DATA = {
   "v": 1,
   "iter": 250000,
-  "event": {"name":"Team Christmas Bunutan 2026","budget":"₱300","date":"December 18"},
+  "event": {"name":"Ganak da Donga-il 🍏Poliyet Bunutan 2026","budget":"₱500 | 💗","date":"December 20"},
   "people": [
     {"n":"Agramos - Ancheta","s":"Rvk4PhMUgHRtGHGC5Flc6w==","i":"cEx+3WDFnx/N3cSf","c":"AxEoKcYEdfAJzypoNRfGzkkx0pdQDDg1zZVTjjFig2pb9krtVNtNMiezpvvqy77J5Sfj/hOwOMjr5G+7+3NUUfiP3CTCxX1t6ECy77RTdylPUG7491uHeKdDN0gIa60/mGHPA0ToAWp7cPDIErepeA=="},
     {"n":"Agramos - Botiwtiw","s":"BEHn3lRmr21s2RUf9QutIQ==","i":"QYiNgff561ivVTPj","c":"o7LNMQbYiuEEz+5a9QjDHOwMdovaDNgmj/dZ8/wJ/1HaC3W7cLxNvAOOlKAxWwAq/6fhNmRu6lj71A6wodB8LFYs++5nSmElUhJ1uteqLOno8/KHVX5ieT/vOZjrG0U6JbrH1rDwyijyKKDd4UGRQg=="},
